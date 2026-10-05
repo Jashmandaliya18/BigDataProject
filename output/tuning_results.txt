@@ -1,0 +1,7 @@
+reducers combiner seconds combine_in combine_out shuffle_bytes
+1 yes 1 0 0 0
+1 no 2 0 0 0
+2 yes 2 0 0 0
+2 no 1 0 0 0
+4 yes 2 0 0 0
+4 no 2 0 0 0
