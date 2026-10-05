@@ -5,3 +5,4 @@ dataset/*
 *.zip
 __pycache__/
 .env
+hadoop-3.3.6.tar.gz

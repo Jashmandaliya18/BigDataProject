@@ -15,10 +15,12 @@ ENV HADOOP_HOME=/opt/hadoop
 ENV PATH=$PATH:/opt/hadoop/bin:/opt/hadoop/sbin
 
 # Hadoop (Apple Silicon: use hadoop-3.3.6-aarch64.tar.gz in the URL below)
-RUN wget -q https://archive.apache.org/dist/hadoop/common/hadoop-${HADOOP_VERSION}/hadoop-${HADOOP_VERSION}.tar.gz \
- && tar -xzf hadoop-${HADOOP_VERSION}.tar.gz -C /opt \
+# Hadoop 3.3.6 from local build context
+COPY hadoop-3.3.6.tar.gz /tmp/hadoop-3.3.6.tar.gz
+
+RUN tar -xzf /tmp/hadoop-3.3.6.tar.gz -C /opt \
  && mv /opt/hadoop-${HADOOP_VERSION} /opt/hadoop \
- && rm hadoop-${HADOOP_VERSION}.tar.gz
+ && rm /tmp/hadoop-3.3.6.tar.gz
 
 # passwordless SSH (same key baked in every container)
 RUN mkdir -p /var/run/sshd /root/.ssh \
