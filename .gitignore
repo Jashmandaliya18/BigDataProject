@@ -1,0 +1,7 @@
+dataset/*
+!dataset/README.md
+!dataset/.gitkeep
+*.csv
+*.zip
+__pycache__/
+.env
