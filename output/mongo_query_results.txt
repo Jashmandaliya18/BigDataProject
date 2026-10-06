@@ -1,0 +1,281 @@
+﻿
+== Q1: Drivers holding the fastest lap on the most circuits
+[
+  {
+    _id: 'Max Verstappen',
+    circuits: 5
+  },
+  {
+    _id: 'Charles Leclerc',
+    circuits: 3
+  },
+  {
+    _id: 'Lewis Hamilton',
+    circuits: 3
+  },
+  {
+    _id: 'Valtteri Bottas',
+    circuits: 3
+  },
+  {
+    _id: 'Alexander Albon',
+    circuits: 2
+  },
+  {
+    _id: 'George Russell',
+    circuits: 2
+  },
+  {
+    _id: 'Kimi R├ñikk├╢nen',
+    circuits: 1
+  },
+  {
+    _id: 'Sebastian Vettel',
+    circuits: 1
+  },
+  {
+    _id: 'Antonio Giovinazzi',
+    circuits: 1
+  },
+  {
+    _id: 'Nicholas Latifi',
+    circuits: 1
+  }
+]
+
+== Q2: Fastest circuits by average speed
+[
+  {
+    track: 'Silverstone',
+    avg_speed: 222.433
+  },
+  {
+    track: 'Spa',
+    avg_speed: 222.303
+  },
+  {
+    track: 'RedBull Ring',
+    avg_speed: 217.088
+  },
+  {
+    track: 'Monza',
+    avg_speed: 216.76
+  },
+  {
+    track: 'Suzuka',
+    avg_speed: 209.968
+  },
+  {
+    track: 'Melbourne',
+    avg_speed: 209.098
+  },
+  {
+    track: 'Sochi',
+    avg_speed: 205.3
+  },
+  {
+    track: 'Paul Ricard',
+    avg_speed: 204.293
+  },
+  {
+    track: 'Brazil',
+    avg_speed: 203.27
+  },
+  {
+    track: 'Sakhir',
+    avg_speed: 201.245
+  }
+]
+
+== Q3: Top 10 drivers by maximum speed
+[
+  {
+    _id: 'Valtteri Bottas',
+    top_speed: 346
+  },
+  {
+    _id: 'Kimi R├ñikk├╢nen',
+    top_speed: 344
+  },
+  {
+    _id: 'Antonio Giovinazzi',
+    top_speed: 343
+  },
+  {
+    _id: 'Charles Leclerc',
+    top_speed: 342
+  },
+  {
+    _id: 'Sebastian Vettel',
+    top_speed: 342
+  },
+  {
+    _id: 'Daniel Ricciardo',
+    top_speed: 342
+  },
+  {
+    _id: 'Lance Stroll',
+    top_speed: 341
+  },
+  {
+    _id: 'Carlos Sainz',
+    top_speed: 341
+  },
+  {
+    _id: 'Esteban Ocon',
+    top_speed: 341
+  },
+  {
+    _id: 'Sergio Perez',
+    top_speed: 340
+  }
+]
+
+== Q4: Pit-stop leaders (total stops)
+[
+  {
+    _id: 'Valtteri Bottas',
+    stops: 32
+  },
+  {
+    _id: 'Esteban Ocon',
+    stops: 29
+  },
+  {
+    _id: 'Charles Leclerc',
+    stops: 29
+  },
+  {
+    _id: 'Antonio Giovinazzi',
+    stops: 29
+  },
+  {
+    _id: 'Daniil Kvyat',
+    stops: 28
+  },
+  {
+    _id: 'George Russell',
+    stops: 28
+  },
+  {
+    _id: 'Kimi R├ñikk├╢nen',
+    stops: 28
+  },
+  {
+    _id: 'Lewis Hamilton',
+    stops: 27
+  },
+  {
+    _id: 'Kevin Magnussen',
+    stops: 27
+  },
+  {
+    _id: 'Pierre Gasly',
+    stops: 27
+  }
+]
+
+== Q5: Average speed by tyre compound
+[
+  {
+    tyre: 'soft',
+    samples: 6918514,
+    avg_speed: 197.835,
+    min_speed: 1,
+    max_speed: 346
+  },
+  {
+    tyre: 'hard',
+    samples: 7079755,
+    avg_speed: 194.999,
+    min_speed: 1,
+    max_speed: 342
+  },
+  {
+    tyre: 'medium',
+    samples: 9256696,
+    avg_speed: 191.042,
+    min_speed: 1,
+    max_speed: 341
+  },
+  {
+    tyre: 'unknown',
+    samples: 2336,
+    avg_speed: 188.855,
+    min_speed: 1,
+    max_speed: 336
+  }
+]
+
+== Q6: Most consistent drivers (lowest std)
+[
+  {
+    driver: 'George Russell',
+    laps: 588,
+    std: 11.981
+  },
+  {
+    driver: 'Nicholas Latifi',
+    laps: 561,
+    std: 12.105
+  },
+  {
+    driver: 'Esteban Ocon',
+    laps: 618,
+    std: 12.146
+  },
+  {
+    driver: 'Charles Leclerc',
+    laps: 627,
+    std: 12.242
+  },
+  {
+    driver: 'Valtteri Bottas',
+    laps: 646,
+    std: 12.257
+  }
+]
+
+== Q7: Lap-time trend, Mexico, first 10 laps
+[
+  {
+    lap: 1,
+    avg_lap: 88.395
+  },
+  {
+    lap: 2,
+    avg_lap: 82.315
+  },
+  {
+    lap: 3,
+    avg_lap: 82.378
+  },
+  {
+    lap: 4,
+    avg_lap: 82.206
+  },
+  {
+    lap: 5,
+    avg_lap: 82.767
+  },
+  {
+    lap: 6,
+    avg_lap: 82.811
+  },
+  {
+    lap: 7,
+    avg_lap: 82.646
+  },
+  {
+    lap: 8,
+    avg_lap: 82.884
+  },
+  {
+    lap: 9,
+    avg_lap: 82.913
+  },
+  {
+    lap: 10,
+    avg_lap: 83.481
+  }
+]
