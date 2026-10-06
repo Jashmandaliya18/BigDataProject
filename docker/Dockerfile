@@ -33,7 +33,7 @@ RUN mkdir -p /var/run/sshd /root/.ssh \
 RUN printf "JAVA_HOME=/usr/lib/jvm/java-home\nHADOOP_HOME=/opt/hadoop\nPATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/hadoop/bin:/opt/hadoop/sbin\n" > /etc/environment \
  && printf "export JAVA_HOME=/usr/lib/jvm/java-home\nexport HDFS_NAMENODE_USER=root\nexport HDFS_DATANODE_USER=root\nexport HDFS_SECONDARYNAMENODE_USER=root\nexport YARN_RESOURCEMANAGER_USER=root\nexport YARN_NODEMANAGER_USER=root\n" >> /opt/hadoop/etc/hadoop/hadoop-env.sh \
  && echo "export HADOOP_HOME=/opt/hadoop; export PATH=\$PATH:/opt/hadoop/bin:/opt/hadoop/sbin" >> /root/.bashrc
-
+RUN pip3 install --no-cache-dir pymongo
 COPY config/hadoop/ /opt/hadoop/etc/hadoop/
 COPY docker/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh && mkdir -p /hadoop/dfs/name /hadoop/dfs/data
